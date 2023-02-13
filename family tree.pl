@@ -1,0 +1,12 @@
+female(pam).
+female(liz).
+female(ann).
+male(tom).
+male(bob).
+male(jim).
+mom(bob,pam).
+sis(pam,liz).
+papa(liz,jim).
+mother(X,Y):-mom(X,Y).
+sister(X,Y):-sis(X,Y).
+father(X,Y):-papa(X,Y).
